@@ -1,10 +1,10 @@
 package daemonHelper
 
 import (
+	"github.com/1f349/tlogger"
 	"github.com/charmbracelet/log"
 	"github.com/muesli/termenv"
 	"github.com/stretchr/testify/assert"
-	"io"
 	"testing"
 )
 
@@ -45,7 +45,9 @@ func checkDaemonHelperTest(t *testing.T, d *testDaemon, expectedStarted, expecte
 func TestNewDaemonRunner(t *testing.T) {
 	d := &testDaemon{sChan: make(chan struct{})}
 	log.SetColorProfile(termenv.Ascii)
-	dRunner := NewDaemonRunner(d, log.New(io.Discard))
+	dRunner := NewDaemonRunner(d, tlogger.NewTLoggerWithOptions(t, log.Options{
+		Level: log.DebugLevel,
+	}))
 	assert.NotNil(t, dRunner)
 
 	checkDaemonHelperTest(t, d, false, false, 0)

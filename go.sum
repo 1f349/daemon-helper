@@ -1,3 +1,5 @@
+github.com/1f349/tlogger v0.0.0-20240611002521-2bf90ba65e23 h1:QP4AnjgxkbtLRiiCIG5mfi6LLbehMgAdtb8OCkZGRbA=
+github.com/1f349/tlogger v0.0.0-20240611002521-2bf90ba65e23/go.mod h1:ZAWHNW3VGl+AmAUDpfj1aWIsuwG34eQBHBvFKCGxjWg=
 github.com/aymanbagabas/go-osc52/v2 v2.0.1 h1:HwpRHbFMcZLEVr42D4p7XBqjyuxQH5SMiErDT4WkJ2k=
 github.com/aymanbagabas/go-osc52/v2 v2.0.1/go.mod h1:uYgXzlJ7ZpABp8OJ+exZzJJhRNQ2ASbcXHWsFqH8hp8=
 github.com/charmbracelet/lipgloss v0.10.0 h1:KWeXFSexGcfahHX+54URiZGkBFazf70JNMtwg/AFW3s=
