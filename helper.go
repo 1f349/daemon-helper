@@ -115,7 +115,7 @@ func (d *defaultDaemonRunner) Begin() {
 	n = time.Now()
 	d.daemon.TearDown(true, d.logger)
 	d.logger.Infof("Took '%s' to shutdown", time.Now().Sub(n))
-	log.Debug("Goodbye")
+	d.logger.Debug("Goodbye")
 	d.isStopping = false
 }
 
